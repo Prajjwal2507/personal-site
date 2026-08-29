@@ -34,7 +34,7 @@ function buildHeatmap(calendar) {
 
   const grid = [];
   const monthLabels = new Array(WEEKS).fill(null);
-  let seenMonths = new Set();
+  const seenMonths = new Set();
 
   for (let w = 0; w < WEEKS; w++) {
     const week = [];
@@ -43,15 +43,18 @@ function buildHeatmap(calendar) {
       day.setHours(0, 0, 0, 0);
       const count = byDate.get(day.getTime()) || 0;
       let level = 0;
-      if (count > 0) level = 1;
-      if (count >= 2) level = 2;
-      if (count >= 4) level = 3;
-      if (count >= 7) level = 4;
+      if (count >= 1) level = 1;
+      if (count >= 3) level = 2;
+      if (count >= 5) level = 3;
+      if (count >= 9) level = 4;
       week.push({ level, count, date: day });
 
+      // Label a month only at the first Sunday inside that month (day-of-month
+      // <= 7). This avoids the "Aug / Sep" overlap when week 0 is a stub week.
       if (d === 0) {
+        const dom = day.getDate();
         const m = day.getMonth();
-        if (!seenMonths.has(m)) {
+        if (dom <= 7 && !seenMonths.has(m)) {
           seenMonths.add(m);
           monthLabels[w] = MONTHS[m];
         }
