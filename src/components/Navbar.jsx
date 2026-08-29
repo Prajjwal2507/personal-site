@@ -76,7 +76,7 @@ export default function Navbar() {
             className="text-sm font-bold tracking-tight"
             style={{ color: "var(--fg)" }}
           >
-            <span style={{ color: "var(--accent)" }}>✦</span> Prajjwal
+            <span style={{ color: "var(--accent)" }}>✦</span> Prajjawal
           </button>
 
           {/* Desktop links */}

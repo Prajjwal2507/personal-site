@@ -66,7 +66,7 @@ export default function Contact() {
             </a>
             <span className="text-[var(--fg-dim)] hidden sm:inline">·</span>
             <a
-              href="https://linkedin.com/in/prajjwal-rajput"
+              href="https://linkedin.com/in/prajjawal-rajput"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"

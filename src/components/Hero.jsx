@@ -80,12 +80,12 @@ export default function Hero() {
           <div className="relative w-56 h-56 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full md:rounded-3xl overflow-hidden border border-[var(--border)] shadow-2xl">
             <img 
               src="/profile-light.png" 
-              alt="Prajjwal Rajput (Light Mode)" 
+              alt="Prajjawal Rajput (Light Mode)" 
               className="object-cover w-full h-full light-img"
             />
             <img 
               src="/profile-dark.png" 
-              alt="Prajjwal Rajput (Dark Mode)" 
+              alt="Prajjawal Rajput (Dark Mode)" 
               className="object-cover w-full h-full dark-img"
             />
             {/* Optional tint overlay to blend image with theme */}

@@ -52,7 +52,7 @@ export default function Now() {
                 Last updated · {LAST_UPDATED}
               </p>
               <a
-                href="https://linkedin.com/in/prajjwal-rajput"
+                href="https://linkedin.com/in/prajjawal-rajput"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)] hover:underline"
