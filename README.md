@@ -1,16 +1,78 @@
-# React + Vite
+# 🚀 Aditya Verma — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to my personal portfolio repository! This project showcases my skills, projects, experience, and journey as a developer.
 
-Currently, two official plugins are available:
+## 👨‍💻 About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hi, I'm **Aditya Verma**, a passionate developer who enjoys building modern, useful, and user-friendly applications.
 
-## React Compiler
+I'm continuously learning new technologies, improving my problem-solving skills, and turning ideas into real-world projects.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- Express.js
+- MongoDB
+- Git & GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+> _Technologies may be updated as I continue learning and exploring new tools._
+
+## 🌐 Portfolio
+
+🔗 **Live Portfolio:** Add your portfolio link here
+
+## 📂 Projects
+
+### 🔹 Project 1
+
+Add a short description of your project here.
+
+**Tech:** Add technologies used
+
+### 🔹 Project 2
+
+Add a short description of your project here.
+
+**Tech:** Add technologies used
+
+### 🔹 Project 3
+
+Add a short description of your project here.
+
+**Tech:** Add technologies used
+
+## ✨ Portfolio Highlights
+
+- 📱 Responsive design
+- 🎨 Modern and clean UI
+- 💻 Projects showcase
+- 🧑‍💻 Skills & technologies
+- 📄 Resume / experience
+- 📬 Contact section
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
+npm run dev
+```
+
+## 📫 Connect With Me
+
+- **GitHub:** Add your GitHub profile
+- **LinkedIn:** Add your LinkedIn profile
+- **Email:** Add your email
+
+## ⭐ Show Your Support
+
+If you like my portfolio or find any of my projects interesting, feel free to ⭐ the repository!
+
+---
+
+### 💙 Built with passion by **Aditya Verma**
