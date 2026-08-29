@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#030712"/>
+  <!-- < bracket -->
+  <path d="M7 16L11 11" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M7 16L11 21" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- > bracket -->
+  <path d="M25 16L21 11" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M25 16L21 21" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- / slash -->
+  <path d="M19 10L13 22" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
