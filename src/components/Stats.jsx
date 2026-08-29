@@ -69,6 +69,7 @@ function buildHeatmap(calendar) {
 export default function Stats() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [gh, setGh] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -76,6 +77,12 @@ export default function Stats() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((json) => !cancelled && setData(json))
       .catch((err) => !cancelled && setError(err.message || "Failed to load."));
+    fetch("/api/github-stats")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+      .then((json) => !cancelled && setGh(json))
+      .catch(() => {
+        /* GitHub card is non-critical; ignore failures. */
+      });
     return () => {
       cancelled = true;
     };
@@ -130,7 +137,7 @@ export default function Stats() {
                   {data?.streak != null ? `Streak · ${data.streak}` : "DSA · DP · Graphs"}
                 </span>
                 <span>
-                  {data?.ranking ? `Rank #${data.ranking.toLocaleString()}` : "Live LeetCode"}
+                  {data?.ranking ? `Global rank #${data.ranking.toLocaleString()}` : "Live LeetCode"}
                 </span>
               </div>
             </FadeIn>
@@ -234,14 +241,18 @@ export default function Stats() {
                 <span className="text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
               </a>
               <a
-                href="https://github.com/Prajjwal2507"
+                href={`https://github.com/${gh?.username || "Prajjwal2507"}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card p-6 flex items-center justify-between group"
               >
                 <div>
                   <p className="font-bold">GitHub</p>
-                  <p className="text-sm text-[var(--fg-muted)]">@Prajjwal2507</p>
+                  <p className="text-sm text-[var(--fg-muted)]">
+                    {gh
+                      ? `${gh.publicRepos} repos · ${gh.totalStars ?? 0} ★ · ${gh.followers} followers`
+                      : "@Prajjwal2507"}
+                  </p>
                 </div>
                 <span className="text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
               </a>

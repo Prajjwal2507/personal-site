@@ -50,9 +50,38 @@ export default function Contact() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
             Let's build something <span className="gradient-text">extraordinary.</span>
           </h2>
-          <p className="text-[var(--fg-muted)] max-w-xl mx-auto mb-16 leading-relaxed">
-            I'm currently open for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
+          <p className="text-[var(--fg-muted)] max-w-xl mx-auto mb-6 leading-relaxed">
+            I read every message and reply within 24 hours. Whether it's a full-time role, a project idea, an MCP question, or just a hello — drop a line below.
           </p>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-14 text-sm">
+            <a
+              href="mailto:prajjwalrajput2507@gmail.com"
+              className="inline-flex items-center gap-2 text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"
+            >
+              <span className="font-mono text-xs">✉</span>
+              prajjwalrajput2507@gmail.com
+            </a>
+            <span className="text-[var(--fg-dim)] hidden sm:inline">·</span>
+            <a
+              href="https://linkedin.com/in/prajjwal-rajput"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"
+            >
+              LinkedIn DM ↗
+            </a>
+            <span className="text-[var(--fg-dim)] hidden sm:inline">·</span>
+            <span className="inline-flex items-center gap-2 text-[var(--fg-dim)] font-mono text-xs">
+              <span
+                className="inline-block w-1.5 h-1.5 rounded-full"
+                style={{ backgroundColor: "var(--accent)" }}
+              />
+              Usually replies within 24h
+            </span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.2}>

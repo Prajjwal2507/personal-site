@@ -1,9 +1,16 @@
 import { FadeIn } from "./FadeIn";
 
 const STATS = [
-  { value: "1000+", label: "DSA Problems Solved" },
+  { value: "400+", label: "LeetCode Problems Solved" },
   { value: "1.53M+", label: "Devices Impacted @ Barco" },
   { value: "8.01", label: "CGPA · B.Tech CSE" },
+];
+
+const FACTS = [
+  { label: "Based in", value: "Noida, India · IST" },
+  { label: "Role", value: "SWE Intern @ Barco (MX Team)" },
+  { label: "Studying", value: "B.Tech CSE, JSSATE Noida" },
+  { label: "Available from", value: "Dec 2026" },
 ];
 
 export default function About() {
@@ -15,6 +22,22 @@ export default function About() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-16 max-w-2xl">
             Engineering with <span className="gradient-text">intent.</span>
           </h2>
+        </FadeIn>
+
+        <FadeIn delay={0.05}>
+          <div
+            className="mb-12 rounded-2xl border p-5 md:p-6 flex flex-wrap gap-x-8 gap-y-4"
+            style={{ borderColor: "var(--border)", backgroundColor: "var(--surface)" }}
+          >
+            {FACTS.map((f) => (
+              <div key={f.label} className="min-w-[160px]">
+                <p className="text-[10px] font-mono uppercase tracking-widest text-[var(--fg-dim)] mb-1">
+                  {f.label}
+                </p>
+                <p className="text-sm font-medium text-[var(--fg)]">{f.value}</p>
+              </div>
+            ))}
+          </div>
         </FadeIn>
 
         <div className="grid md:grid-cols-12 gap-12 lg:gap-20 items-start">

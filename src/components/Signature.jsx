@@ -127,7 +127,14 @@ export default function Signature() {
                 }}
               >
                 <span>1 tool · 9 total in pigeon-mcp</span>
-                <span className="text-[var(--accent)]">Claude Desktop ready</span>
+                <a
+                  href="https://github.com/Prajjwal2507/chat-app-mcp-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  Read the source ↗
+                </a>
               </div>
             </div>
           </FadeIn>

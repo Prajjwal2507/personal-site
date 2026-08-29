@@ -58,6 +58,21 @@ export default function Hero() {
               </button>
             </div>
           </FadeIn>
+
+          <FadeIn delay={0.5}>
+            <button
+              onClick={() => go("#signature")}
+              className="mt-8 group inline-flex items-center gap-3 text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"
+            >
+              <span
+                className="inline-block w-2 h-2 rounded-full animate-pulse"
+                style={{ backgroundColor: "var(--accent)" }}
+              />
+              <span className="font-mono text-xs uppercase tracking-widest">Now</span>
+              <span>Shipping the XMS Cloud MCP server @ Barco</span>
+              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+            </button>
+          </FadeIn>
         </div>
 
         {/* Image / Avatar */}
@@ -79,6 +94,25 @@ export default function Hero() {
         </FadeIn>
 
       </div>
+
+      {/* Scroll indicator */}
+      <motion.button
+        onClick={() => go("#signature")}
+        aria-label="Scroll to next section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-[var(--fg-dim)] hover:text-[var(--accent)] transition-colors"
+      >
+        <span className="text-[10px] font-mono uppercase tracking-widest">Scroll</span>
+        <motion.span
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+          className="text-lg leading-none"
+        >
+          ↓
+        </motion.span>
+      </motion.button>
     </section>
   );
 }

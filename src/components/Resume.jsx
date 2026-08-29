@@ -6,6 +6,7 @@ const TIMELINE = [
     date: "Jun 2026 – Nov 2026",
     title: "Software Engineering Intern — MX Team (ClickShare & XMS Cloud)",
     org: "Barco Electronic Systems Pvt. Ltd. · Noida",
+    orgUrl: "https://www.barco.com",
     desc: "Currently building an internal Model Context Protocol (MCP) server for the XMS Cloud portal, exposing portal actions as typed tools so end users can operate Barco fleets directly through AI agents like Claude and Copilot. Earlier in the internship, shipped a Universal Web QR Scanner in Angular/TypeScript from POC to production behind a feature flag, supporting onboarding of 1.53M+ ClickShare units across 500+ global companies. Cut scan latency from 4s+ to under 1s using a hybrid BarcodeDetector + zxing-wasm pipeline serving 253+ scans/day. Raised Notification Manager test coverage from 64% to 99% with Mocha.",
   },
   {
@@ -13,6 +14,7 @@ const TIMELINE = [
     date: "Oct 2023 – Present",
     title: "B.Tech in Computer Science and Engineering",
     org: "JSS Academy of Technical Education, Noida · CGPA 8.01",
+    orgUrl: "https://www.jssaten.ac.in",
     desc: "Coursework and self-study focused on data structures, algorithms, distributed systems, databases and full-stack web engineering. Active competitive programmer alongside academics.",
   },
   {
@@ -20,13 +22,15 @@ const TIMELINE = [
     date: "2023 – Present",
     title: "400+ LeetCode · 600+ Total DSA Problems",
     org: "Competitive Programming",
-    desc: "Solved 400+ problems on LeetCode and 600+ across competitive programming platforms covering Arrays, Trees, Graphs, Dynamic Programming, and Backtracking.",
+    orgUrl: "https://leetcode.com/prajjwal_rajput",
+    desc: "Solved 400+ problems on LeetCode and 600+ across competitive programming platforms covering Arrays, Trees, Graphs, Dynamic Programming, and Backtracking. Live stats are wired into the Metrics section of this site.",
   },
   {
     type: "Education",
     date: "Apr 2021 – May 2022",
     title: "Class XII (PCM — 91%)",
     org: "Modern Era Public School, Bijnor, UP",
+    orgUrl: null,
     desc: "Higher secondary education with a specialization in Physics, Chemistry and Mathematics.",
   },
 ];
@@ -68,7 +72,18 @@ export default function Resume() {
                     <span className="text-sm font-mono text-[var(--fg-dim)]">{item.date}</span>
                   </div>
                   <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                  <p className="text-[var(--accent-2)] text-sm font-medium mb-4">{item.org}</p>
+                  {item.orgUrl ? (
+                    <a
+                      href={item.orgUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[var(--accent-2)] text-sm font-medium mb-4 hover:underline decoration-dotted"
+                    >
+                      {item.org} <span className="text-xs">↗</span>
+                    </a>
+                  ) : (
+                    <p className="text-[var(--accent-2)] text-sm font-medium mb-4">{item.org}</p>
+                  )}
                   <p className="text-[var(--fg-muted)] leading-relaxed">
                     {item.desc}
                   </p>

@@ -48,9 +48,17 @@ export default function Now() {
                 </a>
                 .
               </p>
-              <p className="text-xs font-mono text-[var(--fg-dim)]">
+              <p className="text-xs font-mono text-[var(--fg-dim)] mb-6">
                 Last updated · {LAST_UPDATED}
               </p>
+              <a
+                href="https://linkedin.com/in/prajjwal-rajput"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)] hover:underline"
+              >
+                Follow along on LinkedIn ↗
+              </a>
             </FadeIn>
           </div>
 

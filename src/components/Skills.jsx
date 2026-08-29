@@ -52,6 +52,26 @@ export default function Skills() {
             </StaggerItem>
           ))}
         </StaggerParent>
+
+        <FadeIn delay={0.2} className="mt-10">
+          <div
+            className="rounded-2xl border p-5 md:p-6 flex flex-wrap items-center gap-3"
+            style={{ borderColor: "var(--border)", backgroundColor: "var(--surface)" }}
+          >
+            <p className="text-[10px] font-mono uppercase tracking-widest text-[var(--accent)] mr-2">
+              Currently exploring
+            </p>
+            {[
+              "Rust",
+              "WebAssembly",
+              "LangGraph checkpointing",
+              "MCP transports",
+              "Postgres RLS",
+            ].map((s) => (
+              <span key={s} className="badge">{s}</span>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

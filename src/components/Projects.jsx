@@ -190,13 +190,25 @@ function FeaturedCard({ project, onOpen }) {
       onClick={onOpen}
       whileHover={{ y: -4 }}
       transition={{ type: "spring", stiffness: 300, damping: 22 }}
-      className="group w-full text-left card overflow-hidden"
+      className="group w-full text-left card overflow-hidden relative"
     >
+      {/* Featured ribbon */}
+      <div className="absolute top-4 left-4 z-10">
+        <span
+          className="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest shadow-lg"
+          style={{
+            backgroundColor: "var(--accent)",
+            color: "var(--btn-fg, #fff)",
+          }}
+        >
+          ✦ Featured
+        </span>
+      </div>
+
       <div className="md:grid md:grid-cols-5 md:min-h-[320px]">
         <div className="p-8 md:p-10 md:col-span-3 flex flex-col justify-between">
           <div>
             <div className="flex items-center gap-3 mb-5 flex-wrap">
-              <span className="badge">Featured</span>
               <span className="text-xs font-mono text-[var(--fg-dim)] uppercase tracking-widest">
                 {project.subtitle}
               </span>
