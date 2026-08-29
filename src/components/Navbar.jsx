@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
 
 const NAV = [
-  { label: "Home",    href: "#home"     },
-  { label: "About",   href: "#about"    },
-  { label: "Skills",  href: "#skills"   },
-  { label: "Work",    href: "#projects" },
-  { label: "Stats",   href: "#stats"    },
-  { label: "Resume",  href: "#resume"   },
-  { label: "Contact", href: "#contact"  },
+  { label: "Home",    href: "#home"      },
+  { label: "Focus",   href: "#signature" },
+  { label: "About",   href: "#about"     },
+  { label: "Work",    href: "#projects"  },
+  { label: "Now",     href: "#now"       },
+  { label: "Stats",   href: "#stats"     },
+  { label: "Resume",  href: "#resume"    },
+  { label: "Contact", href: "#contact"   },
 ];
 
 const go = (href) => document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
@@ -75,7 +76,7 @@ export default function Navbar() {
             className="text-sm font-bold tracking-tight"
             style={{ color: "var(--fg)" }}
           >
-            <span style={{ color: "var(--accent)" }}>✦</span> Aditya
+            <span style={{ color: "var(--accent)" }}>✦</span> Prajjwal
           </button>
 
           {/* Desktop links */}

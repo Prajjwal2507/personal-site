@@ -2,19 +2,19 @@ import { FadeIn, StaggerParent, StaggerItem } from "./FadeIn";
 
 const CATEGORIES = [
   {
-    title: "Frontend Engineering",
-    desc: "Crafting fluid, responsive, and accessible user interfaces.",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"],
+    title: "Agentic AI & LLMs",
+    desc: "Building stateful multi-agent workflows and standardized AI tool interfaces.",
+    skills: ["LangGraph", "LangChain", "MCP / FastMCP", "Autonomous Agents", "FAISS", "Hugging Face"],
   },
   {
-    title: "Backend Architecture",
-    desc: "Designing scalable APIs and robust data models.",
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Redis"],
+    title: "Full-Stack Engineering",
+    desc: "Shipping type-safe MERN & PERN products with modern React interfaces.",
+    skills: ["React 19", "TypeScript", "Next.js", "Node.js", "Express", "FastAPI", "Tailwind CSS"],
   },
   {
-    title: "Tools & Methodologies",
-    desc: "Streamlining workflows and ensuring code quality.",
-    skills: ["Git", "Docker", "CI/CD", "System Design", "Agile"],
+    title: "Data, Infra & Real-Time",
+    desc: "Databases, ORMs, WebSockets, auth and observability across the stack.",
+    skills: ["PostgreSQL (Neon)", "MongoDB", "Drizzle ORM", "Prisma", "Socket.io", "Clerk", "Sentry", "JWT"],
   },
 ];
 

@@ -2,25 +2,32 @@ import { FadeIn } from "./FadeIn";
 
 const TIMELINE = [
   {
-    type: "Education",
-    date: "2022 – 2026",
-    title: "B.Tech in Computer Science",
-    org: "University Name",
-    desc: "Specialized in distributed systems and advanced data structures. Led the algorithmic coding club.",
-  },
-  {
     type: "Experience",
-    date: "Summer 2025",
-    title: "Backend Engineering Intern",
-    org: "Tech Company",
-    desc: "Architected scalable microservices using Node.js and Redis, reducing API response times by 40%.",
+    date: "Jun 2026 – Nov 2026",
+    title: "Software Engineering Intern — MX Team (ClickShare & XMS Cloud)",
+    org: "Barco Electronic Systems Pvt. Ltd. · Noida",
+    desc: "Currently building an internal Model Context Protocol (MCP) server for the XMS Cloud portal, exposing portal actions as typed tools so end users can operate Barco fleets directly through AI agents like Claude and Copilot. Earlier in the internship, shipped a Universal Web QR Scanner in Angular/TypeScript from POC to production behind a feature flag, supporting onboarding of 1.53M+ ClickShare units across 500+ global companies. Cut scan latency from 4s+ to under 1s using a hybrid BarcodeDetector + zxing-wasm pipeline serving 253+ scans/day. Raised Notification Manager test coverage from 64% to 99% with Mocha.",
   },
   {
-    type: "Open Source",
-    date: "2024",
-    title: "Core Contributor",
-    org: "Major OSS Project",
-    desc: "Optimized data parsing pipelines and improved TypeScript typings across the core library.",
+    type: "Education",
+    date: "Oct 2023 – Present",
+    title: "B.Tech in Computer Science and Engineering",
+    org: "JSS Academy of Technical Education, Noida · CGPA 8.01",
+    desc: "Coursework and self-study focused on data structures, algorithms, distributed systems, databases and full-stack web engineering. Active competitive programmer alongside academics.",
+  },
+  {
+    type: "Achievements",
+    date: "2023 – Present",
+    title: "400+ LeetCode · 600+ Total DSA Problems",
+    org: "Competitive Programming",
+    desc: "Solved 400+ problems on LeetCode and 600+ across competitive programming platforms covering Arrays, Trees, Graphs, Dynamic Programming, and Backtracking.",
+  },
+  {
+    type: "Education",
+    date: "Apr 2021 – May 2022",
+    title: "Class XII (PCM — 91%)",
+    org: "Modern Era Public School, Bijnor, UP",
+    desc: "Higher secondary education with a specialization in Physics, Chemistry and Mathematics.",
   },
 ];
 

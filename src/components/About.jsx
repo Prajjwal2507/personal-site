@@ -1,9 +1,9 @@
 import { FadeIn } from "./FadeIn";
 
 const STATS = [
-  { value: "500+", label: "Algorithms Solved" },
-  { value: "02", label: "Years Experience" },
-  { value: "100%", label: "Client Satisfaction" },
+  { value: "1000+", label: "DSA Problems Solved" },
+  { value: "1.53M+", label: "Devices Impacted @ Barco" },
+  { value: "8.01", label: "CGPA · B.Tech CSE" },
 ];
 
 export default function About() {
@@ -21,17 +21,17 @@ export default function About() {
           <div className="md:col-span-7 space-y-6 text-[var(--fg-muted)] leading-relaxed">
             <FadeIn delay={0.1}>
               <p>
-                As a dedicated B.Tech Computer Science engineering student, I engineer robust, highly scalable software designed to tackle complex real-world challenges. My technical foundation is anchored in advanced data structures and algorithms, which seamlessly powers my expertise in modern full-stack development.
+                I'm a final-year B.Tech Computer Science student and a Full-Stack Engineer focused on the intersection of scalable web infrastructure and autonomous agent architectures. My core expertise covers the full software lifecycle—engineering type-safe backends in TypeScript/Express/PostgreSQL (Drizzle ORM) and Node.js/MongoDB, paired with modern React 19 interfaces.
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p>
-                I specialize in architecting resilient backend systems, optimizing API performance, and integrating high-throughput databases with real-time technologies like Redis. I thrive on deconstructing intricate systems and translating demanding requirements into elegant, high-performance solutions.
+                Beyond traditional full-stack work, I design and deploy Agentic AI systems using LangChain, LangGraph, and the Model Context Protocol (MCP)—building stateful, multi-agent workflows capable of tool invocation, autonomous reasoning, and structured task execution.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p>
-                Beyond building software, I am an avid competitive programmer on platforms like LeetCode and Codeforces, relentlessly refining my analytical problem-solving capabilities to consistently deliver exceptionally precise, efficient, and creative code.
+                I'm currently a Software Engineering Intern on Barco's MX Team (ClickShare & XMS Cloud). I shipped a production Universal Web QR Scanner supporting onboarding for 1.53M+ ClickShare devices across 500+ global companies, and I'm now building an internal MCP server for the XMS Cloud portal so our users can drive it directly from AI agents like Claude and Copilot. I'm also an avid competitive programmer with 400+ problems solved on LeetCode.
               </p>
             </FadeIn>
           </div>

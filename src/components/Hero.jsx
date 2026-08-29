@@ -32,19 +32,19 @@ export default function Hero() {
           <FadeIn delay={0.1}>
             <div className="badge mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-              Available for hire
+              Currently @ Barco · Open to Full-Time (2026 grad)
             </div>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-              Building systems that <span className="gradient-text italic">scale, perform &amp; matter.</span>
+              Architecting web platforms and <span className="gradient-text italic">autonomous AI systems.</span>
             </h1>
           </FadeIn>
 
           <FadeIn delay={0.3}>
             <p className="text-lg md:text-xl text-[var(--fg-muted)] mb-10 leading-relaxed font-light">
-              Full-stack engineer and competitive programmer building high-performance web applications, scalable backends, and AI-powered products.
+              Full-Stack & Agentic AI Engineer specializing in MERN/PERN stacks, LangGraph multi-agent workflows, and Model Context Protocol (MCP) integrations.
             </p>
           </FadeIn>
 
@@ -64,13 +64,13 @@ export default function Hero() {
         <FadeIn delay={0.5} className="order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative w-56 h-56 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full md:rounded-3xl overflow-hidden border border-[var(--border)] shadow-2xl">
             <img 
-              src="/profile-light.jpg" 
-              alt="Aditya (Light Mode)" 
+              src="/profile-light.png" 
+              alt="Prajjwal Rajput (Light Mode)" 
               className="object-cover w-full h-full light-img"
             />
             <img 
-              src="/profile-dark.jpg" 
-              alt="Aditya (Dark Mode)" 
+              src="/profile-dark.png" 
+              alt="Prajjwal Rajput (Dark Mode)" 
               className="object-cover w-full h-full dark-img"
             />
             {/* Optional tint overlay to blend image with theme */}
