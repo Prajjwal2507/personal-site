@@ -47,11 +47,11 @@ const PILLARS = [
 
 export default function Signature() {
   return (
-    <section id="signature" className="py-24 md:py-32 relative">
+    <section id="signature" className="py-24 md:py-32 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left: intro + pillars */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 min-w-0">
             <FadeIn>
               <p className="section-label">Signature</p>
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
@@ -83,8 +83,8 @@ export default function Signature() {
           </div>
 
           {/* Right: code snippet */}
-          <FadeIn delay={0.2} className="lg:col-span-6">
-            <div className="card overflow-hidden">
+          <FadeIn delay={0.2} className="lg:col-span-6 min-w-0 w-full">
+            <div className="card overflow-hidden w-full max-w-full">
               {/* Fake window chrome */}
               <div
                 className="flex items-center gap-2 px-4 py-3 border-b"
@@ -101,8 +101,8 @@ export default function Signature() {
               </div>
 
               {/* Code */}
-              <div className="p-5 md:p-6 overflow-x-auto">
-                <pre className="text-sm md:text-sm font-mono leading-relaxed">
+              <div className="p-5 md:p-6 overflow-x-auto max-w-full">
+                <pre className="text-sm font-mono leading-relaxed inline-block min-w-0">
                   {CODE_LINES.map((line, i) => (
                     <motion.div
                       key={i}

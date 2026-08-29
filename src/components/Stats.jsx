@@ -125,14 +125,14 @@ export default function Stats() {
           </p>
         </FadeIn>
 
-        <div className="grid lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-4 flex flex-col gap-8">
-            <FadeIn delay={0.1} className="card p-8 flex-1 flex flex-col justify-center">
+        <div className="grid lg:grid-cols-12 gap-6 md:gap-8">
+          <div className="lg:col-span-4 flex flex-col gap-6 md:gap-8 min-w-0">
+            <FadeIn delay={0.1} className="card p-6 md:p-8 flex-1 flex flex-col justify-center">
               <p className="text-[var(--fg-muted)] text-sm mb-2">Problems Solved</p>
               <p className="text-5xl font-bold text-[var(--accent)] mb-4">
                 {totalSolved !== null ? totalSolved.toLocaleString() : "…"}
               </p>
-              <div className="flex justify-between text-xs font-mono text-[var(--fg-dim)] border-t border-[var(--border)] pt-4">
+              <div className="flex flex-wrap gap-x-2 gap-y-1 justify-between text-xs font-mono text-[var(--fg-dim)] border-t border-[var(--border)] pt-4">
                 <span>
                   {data?.streak != null ? `Streak · ${data.streak}` : "DSA · DP · Graphs"}
                 </span>
@@ -142,7 +142,7 @@ export default function Stats() {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.2} className="card p-8 flex-1 flex flex-col justify-center">
+            <FadeIn delay={0.2} className="card p-6 md:p-8 flex-1 flex flex-col justify-center">
               <p className="text-[var(--fg-muted)] text-sm mb-4">Problem Distribution</p>
               <div className="space-y-4">
                 {distribution.map((d) => (
@@ -167,8 +167,8 @@ export default function Stats() {
             </FadeIn>
           </div>
 
-          <div className="lg:col-span-8 flex flex-col gap-8">
-            <FadeIn delay={0.3} className="card p-8 flex-1 overflow-x-auto">
+          <div className="lg:col-span-8 flex flex-col gap-6 md:gap-8 min-w-0">
+            <FadeIn delay={0.3} className="card p-6 md:p-8 flex-1 overflow-x-auto">
               <div className="flex justify-between items-end mb-8 min-w-[600px]">
                 <div>
                   <h3 className="font-bold text-lg mb-1">Activity Map</h3>
@@ -229,36 +229,36 @@ export default function Stats() {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.4} className="grid grid-cols-2 gap-8">
+            <FadeIn delay={0.4} className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <a
                 href={`https://leetcode.com/${data?.username || "prajjwal_rajput"}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card p-6 flex items-center justify-between group"
+                className="card p-5 md:p-6 flex items-center justify-between gap-3 group min-w-0"
               >
-                <div>
+                <div className="min-w-0">
                   <p className="font-bold">LeetCode</p>
-                  <p className="text-sm text-[var(--fg-muted)]">
+                  <p className="text-sm text-[var(--fg-muted)] truncate">
                     {totalSolved !== null ? `${totalSolved.toLocaleString()} solved` : "Live profile"}
                   </p>
                 </div>
-                <span className="text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
+                <span className="shrink-0 text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
               </a>
               <a
                 href={`https://github.com/${gh?.username || "Prajjwal2507"}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card p-6 flex items-center justify-between group"
+                className="card p-5 md:p-6 flex items-center justify-between gap-3 group min-w-0"
               >
-                <div>
+                <div className="min-w-0">
                   <p className="font-bold">GitHub</p>
-                  <p className="text-sm text-[var(--fg-muted)]">
+                  <p className="text-sm text-[var(--fg-muted)] truncate">
                     {gh
                       ? `${gh.publicRepos} repos · ${gh.totalStars ?? 0} ★ · ${gh.followers} followers`
                       : "@Prajjwal2507"}
                   </p>
                 </div>
-                <span className="text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
+                <span className="shrink-0 text-[var(--border-focus)] group-hover:text-[var(--accent)] transition-colors">↗</span>
               </a>
             </FadeIn>
           </div>
