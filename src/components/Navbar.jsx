@@ -80,7 +80,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop links */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {NAV.map((link) => {
               const isActive = active === link.href.slice(1);
               return (
@@ -106,7 +106,7 @@ export default function Navbar() {
           </nav>
 
           {/* Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full transition-colors duration-150 hover:bg-[var(--surface-2)]"
@@ -126,7 +126,7 @@ export default function Navbar() {
           </div>
 
           {/* Hamburger & Mobile Theme Toggle */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="lg:hidden flex items-center gap-4">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full transition-colors duration-150"

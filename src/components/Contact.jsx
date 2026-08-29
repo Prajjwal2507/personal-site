@@ -56,10 +56,10 @@ export default function Contact() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-14 text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3 mb-14 text-sm">
             <a
               href="mailto:prajjwalrajput2507@gmail.com"
-              className="inline-flex items-center gap-2 text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"
+              className="inline-flex items-center gap-2 text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors break-all"
             >
               <span className="font-mono text-xs">✉</span>
               prajjwalrajput2507@gmail.com

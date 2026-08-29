@@ -102,7 +102,7 @@ export default function Signature() {
 
               {/* Code */}
               <div className="p-5 md:p-6 overflow-x-auto">
-                <pre className="text-[13px] md:text-sm font-mono leading-relaxed">
+                <pre className="text-sm md:text-sm font-mono leading-relaxed">
                   {CODE_LINES.map((line, i) => (
                     <motion.div
                       key={i}

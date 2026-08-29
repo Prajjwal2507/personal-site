@@ -193,9 +193,9 @@ function FeaturedCard({ project, onOpen }) {
       className="group w-full text-left card overflow-hidden relative"
     >
       {/* Featured ribbon */}
-      <div className="absolute top-4 left-4 z-10">
+      <div className="absolute top-3 left-3 md:top-4 md:left-4 z-10">
         <span
-          className="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest shadow-lg"
+          className="px-2.5 md:px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest shadow-lg"
           style={{
             backgroundColor: "var(--accent)",
             color: "var(--btn-fg, #fff)",
@@ -206,7 +206,7 @@ function FeaturedCard({ project, onOpen }) {
       </div>
 
       <div className="md:grid md:grid-cols-5 md:min-h-[320px]">
-        <div className="p-8 md:p-10 md:col-span-3 flex flex-col justify-between">
+        <div className="p-8 pt-14 md:p-10 md:pt-10 md:col-span-3 flex flex-col justify-between">
           <div>
             <div className="flex items-center gap-3 mb-5 flex-wrap">
               <span className="text-xs font-mono text-[var(--fg-dim)] uppercase tracking-widest">

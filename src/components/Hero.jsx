@@ -62,15 +62,15 @@ export default function Hero() {
           <FadeIn delay={0.5}>
             <button
               onClick={() => go("#signature")}
-              className="mt-8 group inline-flex items-center gap-3 text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors"
+              className="mt-8 group inline-flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors max-w-full text-left"
             >
               <span
-                className="inline-block w-2 h-2 rounded-full animate-pulse"
+                className="inline-block w-2 h-2 rounded-full animate-pulse shrink-0"
                 style={{ backgroundColor: "var(--accent)" }}
               />
-              <span className="font-mono text-xs uppercase tracking-widest">Now</span>
-              <span>Shipping the XMS Cloud MCP server @ Barco</span>
-              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+              <span className="font-mono text-xs uppercase tracking-widest shrink-0">Now</span>
+              <span className="min-w-0">Shipping the XMS Cloud MCP server @ Barco</span>
+              <span className="transition-transform group-hover:translate-x-0.5 shrink-0">→</span>
             </button>
           </FadeIn>
         </div>

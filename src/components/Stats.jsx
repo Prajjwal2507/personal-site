@@ -189,6 +189,10 @@ export default function Stats() {
                 </div>
               </div>
 
+              <p className="md:hidden text-[10px] font-mono uppercase tracking-widest text-[var(--fg-dim)] mb-3">
+                ← swipe to view the full year →
+              </p>
+
               <div className="min-w-[600px]">
                 <div className="flex mb-2 ml-6 text-xs text-[var(--fg-dim)]">
                   {heatmap.grid.length > 0

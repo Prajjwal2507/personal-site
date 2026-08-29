@@ -56,10 +56,10 @@ export default function ProjectModal({ project, onClose }) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 backdrop-blur transition-colors"
+                className="absolute top-3 right-3 md:top-4 md:right-4 p-2.5 rounded-full bg-black/60 text-white hover:bg-black/80 backdrop-blur transition-colors"
                 aria-label="Close"
               >
-                <X size={18} />
+                <X size={20} />
               </button>
             </div>
 

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Global responsive guards. */
+html, body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
 /* ─── Design Tokens (Organic Beige & Green Light Mode) ────────────── */
 :root {
   --bg:           #F4EFE6;          /* Warm textured beige */
