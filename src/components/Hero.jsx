@@ -32,7 +32,17 @@ export default function Hero() {
           <FadeIn delay={0.1}>
             <div className="badge mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-              Currently @ Barco · Open to Full-Time (2026 grad)
+              Currently @{" "}
+              <a
+                href="https://www.barco.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-dotted hover:text-[var(--accent)] transition-colors"
+              >
+                Barco
+              </a>
+              {" "}
+              · Open to Full-Time (2027 grad)
             </div>
           </FadeIn>
 
@@ -69,7 +79,18 @@ export default function Hero() {
                 style={{ backgroundColor: "var(--accent)" }}
               />
               <span className="font-mono text-xs uppercase tracking-widest shrink-0">Now</span>
-              <span className="min-w-0">Shipping the XMS Cloud MCP server @ Barco</span>
+              <span className="min-w-0">
+                Shipping the XMS Cloud MCP server @{" "}
+                <a
+                  href="https://www.barco.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-dotted hover:text-[var(--accent)] transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Barco
+                </a>
+              </span>
               <span className="transition-transform group-hover:translate-x-0.5 shrink-0">→</span>
             </button>
           </FadeIn>

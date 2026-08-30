@@ -21,7 +21,7 @@ const ITEMS = [
   {
     label: "Open to",
     text:
-      "SDE / Full-Stack / AI Engineer full-time roles for 2026 grads. Also open to interesting freelance / OSS collaborations.",
+      "SDE / Full-Stack / AI Engineer full-time roles for 2027 grads. Also open to interesting freelance / OSS collaborations.",
   },
 ];
 
