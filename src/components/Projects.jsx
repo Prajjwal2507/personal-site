@@ -24,7 +24,7 @@ const PROJECTS = [
       "JWT",
     ],
     github: "https://github.com/Prajjwal2507/chat-app-mcp-server",
-    live: "https://new-chat-app-dusky-seven.vercel.app",
+    live: "https://chat.prajjwal-rajput.dev",
     featured: true,
     overview:
       "Full-stack real-time chat platform with private 1-to-1 messaging, live presence tracking, and an MCP server integration for LLM agents. Built on the MERN stack with Socket.io for low-latency communication and a Python FastMCP server that exposes chat operations as tools for Claude Desktop.",
@@ -64,8 +64,8 @@ const PROJECTS = [
       "Hugging Face",
       "Tailwind CSS",
     ],
-    github: "https://github.com/Prajjwal2507",
-    live: null,
+    github: "https://github.com/Prajjwal2507/RAG-ai",
+    live: "https://queryai-eight.vercel.app",
     overview:
       "A full-stack Retrieval-Augmented Generation application that answers complex questions over YouTube transcripts and PDF documents, delivering grounded Gemini responses end-to-end in under 3 seconds.",
     highlights: [
@@ -103,8 +103,8 @@ const PROJECTS = [
       "Sentry",
       "Clerk",
     ],
-    github: "https://github.com/Prajjwal2507",
-    live: null,
+    github: "https://github.com/Prajjwal2507/E-Commerce-Platform",
+    live: "https://primenext-store.onrender.com",
     overview:
       "A modern full-stack e-commerce and merchant management platform with integrated payment pipelines, customer support streaming, and end-to-end observability.",
     highlights: [
@@ -140,8 +140,8 @@ const PROJECTS = [
       "TanStack Query",
       "Tailwind CSS",
     ],
-    github: "https://github.com/Prajjwal2507",
-    live: "https://productify-eta.vercel.app",
+    github: "https://github.com/Prajjwal2507/productify",
+    live: "https://productify.prajjwal-rajput.dev",
     overview:
       "A secure product inventory management application supporting end-to-end CRUD operations, engineered around strict type safety and modern caching patterns.",
     highlights: [
@@ -171,7 +171,7 @@ const PROJECTS = [
       "HTML5",
       "CSS3",
     ],
-    github: "https://github.com/Prajjwal2507",
+    github: "https://github.com/Prajjwal2507/Leetcode-stalker",
     live: null,
     overview:
       "A lightweight automation utility that fetches LeetCode user statistics and dispatches formatted difficulty-breakdown reports to Telegram.",
