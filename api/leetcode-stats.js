@@ -70,10 +70,10 @@ export default async function handler(req, res) {
       calendar = {};
     }
 
-    // Cache at the edge for 1h; serve stale for a day while revalidating.
+    // Cache at the edge for 10 min; serve stale briefly while revalidating.
     res.setHeader(
       "Cache-Control",
-      "public, s-maxage=3600, stale-while-revalidate=86400"
+      "public, s-maxage=600, stale-while-revalidate=120"
     );
 
     return res.status(200).json({
