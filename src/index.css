@@ -130,6 +130,7 @@ html, body {
   .badge {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 6px;
     padding: 4px 14px;
     border-radius: 99px;
